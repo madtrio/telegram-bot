@@ -47,7 +47,7 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
     private final NotificationTaskService notificationTaskService;
 
     @PostConstruct
-    public void init(TelegramBot telegramBot) {
+    public void init() {
         telegramBot.setUpdatesListener(this);
     }
 
